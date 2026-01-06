@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Portfolio Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <nav class="sticky-nav flex items-center justify-center py-6">
+        <div class="flex items-center space-x-12">
+            <img src="assets/LOGO_WEBSITE-removebg-preview.png" alt="Logo" class="h-32 w-auto object-contain transition-transform duration-300 ease-out hover:scale-110 cursor-pointer">
+            
+            <div class="hidden md:flex space-x-10 text-xs">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="profile.html" class="nav-link">Profile/Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="proj-1" class="project-section">
+        <div class="big-number">01</div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="chapter-title typewriter">TEKS</h1>
+            <p class="text-[#ACAD97] tracking-widest text-xs font-bold mb-16 uppercase mt-4">Tugasan 1</p>
+            <div class="project-trigger" onclick="openModal('modal-text')">
+                <div class="w-[1px] h-20 bg-[#ACAD97] mb-8"></div>
+                <span class="trigger-text">Lihat Kajian Tugasan</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="proj-2" class="project-section bg-[#44483D]/20">
+        <div class="big-number">02</div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="chapter-title typewriter">REKABENTUK POSTER</h1>
+            <p class="text-[#ACAD97] tracking-widest text-xs font-bold mb-16 uppercase mt-4">Tugasan 2</p>
+            <div class="project-trigger" onclick="openModal('modal-poster')">
+                <div class="w-[1px] h-20 bg-[#ACAD97] mb-8"></div>
+                <span class="trigger-text">Lihat Kajian Tugasan</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="proj-3" class="project-section">
+        <div class="big-number">03</div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="chapter-title typewriter">ANIMASI GIF</h1>
+            <p class="text-[#ACAD97] tracking-widest text-xs font-bold mb-16 uppercase mt-4">Tugasan 3</p>
+            <div class="project-trigger" onclick="openModal('modal-gif')">
+                <div class="w-[1px] h-20 bg-[#ACAD97] mb-8"></div>
+                <span class="trigger-text">Lihat Kajian Tugasan</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="proj-4" class="project-section bg-[#44483D]/20">
+        <div class="big-number">04</div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="chapter-title typewriter">PROJEK VIDEO</h1>
+            <p class="text-[#ACAD97] tracking-widest text-xs font-bold mb-16 uppercase mt-4">Tugasan 4</p>
+            <div class="project-trigger" onclick="openModal('modal-video')">
+                <div class="w-[1px] h-20 bg-[#ACAD97] mb-8"></div>
+                <span class="trigger-text">Lihat Kajian Tugasan</span>
+            </div>
+        </div>
+    </section>
+
+   <div id="modal-text" class="modal">
+    <div class="case-container">
+        <button onclick="closeModal('modal-text')" class="fixed top-10 right-10 text-white text-xs border border-white/20 px-6 py-3 hover:bg-white hover:text-black transition uppercase font-bold tracking-widest z-50">Close ✕</button>
+        
+        <p class="text-[#ACAD97] font-bold tracking-widest mb-4 uppercase">Tugasan 01</p>
+        <h2 class="text-6xl font-black mb-8 uppercase">Tugasan Teks</h2>
+
+        <div class="step-section">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses pengeditan teks dalam aplikasi Adobe Photoshop.</h3>
+            <p class="text-gray-400 leading-relaxed mb-8">
+                 Tugasan ini menggunakan konsep “typographic collage” di mana huruf-huruf dipenuhi dengan gambar yang melambangkan ciri-ciri unik Kelantan. Teknik ini dipilih untuk menggabungkan pelbagai elemen budaya dalam satu perkataan dan menghasilkan visual yang moden serta menarik.
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses</h3>
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 094950.png"
+                 class="w-full rounded-lg mb-4 shadow-xl border border-white/5" 
+                 alt="Process Phase">
+            <p class="text-gray-400 leading-relaxed italic text-sm">
+                Paparan semasa proses pengeditan.
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Hasil</h3>
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-05 231249.png" class="w-full rounded-lg mb-8 shadow-2xl" alt="Content Writing Example">
+            <p class="text-gray-400 leading-relaxed">
+                Paparan hasil terakhir setelah selesai pengeditan.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-poster" class="modal">
+    <div class="case-container">
+        <button onclick="closeModal('modal-poster')" class="fixed top-10 right-10 text-white text-xs border border-white/20 px-6 py-3 hover:bg-white hover:text-black transition uppercase font-bold tracking-widest z-50">Close ✕</button>
+        
+        <p class="text-[#ACAD97] font-bold tracking-widest mb-4 uppercase">Tugasan 02</p>
+        <h2 class="text-6xl font-black mb-8 uppercase">Rekabentuk Poster</h2>
+
+        <div class="step-section">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses pengeditan poster dalam aplikasi Adobe Photoshop.</h3>
+            <p class="text-gray-400 leading-relaxed mb-6">
+                Dalam tugasan ini, saya mencipta satu poster mengenai makanan tradisional. Reka bentuk poster ini menampilkan ilustrasi makanan secara visual untuk menarik perhatian penonton, di samping dapat memberi gambaran yang jelas tentang keunikan rasa dan keaslian makanan tradisional.
+            </p>
+            <div class="bg-[#ACAD97]/10 p-6 rounded-lg border border-[#ACAD97]/20">
+                <p class="text-sm text-[#ACAD97] italic">
+                    Menampilkan ilustrasi visual yang menarik bagi mengetengahkan keunikan rasa dan keaslian makanan tradisional dengan jelas dan mudah difahami.
+                </p>
+            </div>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses</h3>
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 100102.png" 
+                 class="w-full rounded-lg mb-4 shadow-xl border border-white/5" 
+                 alt="Poster Design Process">
+            <p class="text-gray-400 leading-relaxed italic text-sm">
+               Paparan proses pengeditan Poster
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Hasil</h3>
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-05 231656.png" class="w-full rounded-lg mb-8 shadow-2xl" alt="Poster Design Outcome">
+            <p class="text-gray-400 leading-relaxed">
+                Paparan hasil akhir
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-gif" class="modal">
+    <div class="case-container">
+        <button onclick="closeModal('modal-gif')" class="fixed top-10 right-10 text-white text-xs border border-white/20 px-6 py-3 hover:bg-white hover:text-black transition uppercase font-bold tracking-widest z-50">Close ✕</button>
+        
+        <p class="text-[#ACAD97] font-bold tracking-widest mb-4 uppercase">Tugasan 03</p>
+        <h2 class="text-6xl font-black mb-8 uppercase">Animasi GIF</h2>
+
+        <div class="step-section">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses pengeditan animasi dalam aplikasi Adobe Photoshop</h3>
+            <p class="text-gray-400 leading-relaxed">
+               Konsep utama animasi ini ialah semangat patriotisme dan kebanggaan sebagai rakyat Malaysia. Animasi ini menampilkan satu figura yang sedang memegang Jalur Gemilang yang berkibar megah, melambangkan keberanian, perpaduan dan identiti negara.
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses</h3>
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 101139.png"
+                 class="w-full rounded-lg mb-4 shadow-xl border border-white/5" 
+                 alt="Animation Process">
+            <p class="text-gray-400 leading-relaxed italic text-sm">
+                Paparan proses pengeditan Animasi GIF
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Hasil</h3>
+            <div class="bg-zinc-900 p-4 rounded-xl mb-8 border border-white/5">
+                <img src="C:\Users\User\Desktop\Portfolio\assets\Animasi Tutorial 3.gif" class="w-full rounded-lg" alt="GIF Animation Outcome">
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+                Paparan hasil akhir Animasi GIF
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-video" class="modal">
+    <div class="case-container">
+        <button onclick="closeModal('modal-video')" class="fixed top-10 right-10 text-white text-xs border border-white/20 px-6 py-3 hover:bg-white hover:text-black transition uppercase font-bold tracking-widest z-50">Close ✕</button>
+        
+        <p class="text-[#ACAD97] font-bold tracking-widest mb-4 uppercase">Tugasan 04</p>
+        <h2 class="text-6xl font-black mb-8 uppercase">Projek Video</h2>
+
+        <div class="step-section">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Proses pengeditan video dalam aplikasi CapCut</h3>
+            <p class="text-gray-400 leading-relaxed">
+               Untuk tugasan ini saya ditugaskan untuk menghasilkan satu video berserta dengan audio yang bertemakan Warisan Budaya Malaysia. Saya telah memilih tajuk permainan tradisional Kelantan untuk menyiapkan video saya.
+            </p>
+        </div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-6 uppercase tracking-wider text-white">Proses Video</h3>
+            
+          <div class="step-section mt-12">
+    <h3 class="text-xl font-bold mb-6 uppercase tracking-wider text-white">Proses Gambaran</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        
+        <div class="space-y-2 flex flex-col items-center md:items-start">
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 101732.png" 
+                 class="w-full max-w-[220px] h-[320px] md:h-[380px] object-cover rounded-lg border border-white/10 shadow-lg" 
+                 alt="Proses 1">
+            <p class="text-xs text-gray-500 italic">Proses 1</p>
+        </div>
+        
+        <div class="space-y-2 flex flex-col items-center md:items-start">
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 101744.png" 
+                 class="w-full max-w-[220px] h-[320px] md:h-[380px] object-cover rounded-lg border border-white/10 shadow-lg" 
+                 alt="Proses 2">
+            <p class="text-xs text-gray-500 italic">Proses 2</p>
+        </div>
+
+        <div class="space-y-2 flex flex-col items-center md:items-start">
+            <img src="C:\Users\User\Desktop\Portfolio\assets\Screenshot 2026-01-06 101757.png" 
+                 class="w-full max-w-[220px] h-[320px] md:h-[380px] object-cover rounded-lg border border-white/10 shadow-lg" 
+                 alt="Proses 3">
+            <p class="text-xs text-gray-500 italic">Proses 3</p>
+        </div>
+    </div>
+    
+    <p class="text-gray-400 leading-relaxed text-sm">
+        Proses video ini menggunakan aplikasi CAPCUT untuk mengedit Video.
+    </p>
+</div>
+
+        <div class="step-section mt-12">
+            <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Hasil</h3>
+            <div class="aspect-video bg-black rounded-lg overflow-hidden mb-8 shadow-2xl shadow-black/50 border border-white/5">
+                <video id="vid-player" controls class="w-full h-full">
+                    <source src="assets/Video Tutorial 4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+                Hasil Video Keseluruhan
+        </div>
+    </div>
+</div>
+  <script src="portfolio.js"></script>
+</body>
+</html>
